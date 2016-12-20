@@ -84,7 +84,6 @@ stop_docker() {
     return 0
   fi
 
-  kill -TERM $pid
-  wait $pid
+  kill $pid
 }
 
